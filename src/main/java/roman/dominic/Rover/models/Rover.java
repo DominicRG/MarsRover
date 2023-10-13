@@ -28,4 +28,12 @@ public class Rover {
 
         return instance;
     }
+
+    public static Rover getInstance() {
+        if(instance == null){
+            return null;
+        }
+
+        return instance;
+    }
 }

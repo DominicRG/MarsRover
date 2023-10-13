@@ -34,4 +34,11 @@ public class Map {
         }
         return instance;
     }
+
+    public static Map getInstance() {
+        if (instance == null) {
+            return null;
+        }
+        return instance;
+    }
 }
