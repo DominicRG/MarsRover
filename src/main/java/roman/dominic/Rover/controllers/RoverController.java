@@ -6,18 +6,17 @@ import org.springframework.web.bind.annotation.*;
 import roman.dominic.Rover.exceptions.MapNotFoundException;
 import roman.dominic.Rover.exceptions.ObstacleConflictException;
 import roman.dominic.Rover.models.Direction;
-import roman.dominic.Rover.models.Map;
 import roman.dominic.Rover.models.Rover;
-import roman.dominic.Rover.services.RoverServiceImpl;
+import roman.dominic.Rover.services.IRoverService;
 
 @RestController
 @RequestMapping("/rover")
 public class RoverController {
 
-    RoverServiceImpl roverService;
+    IRoverService roverService;
 
     @Autowired
-    public RoverController(RoverServiceImpl roverService) {
+    public RoverController(IRoverService roverService) {
         this.roverService = roverService;
     }
 

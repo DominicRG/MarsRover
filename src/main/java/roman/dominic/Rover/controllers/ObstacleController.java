@@ -5,19 +5,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import roman.dominic.Rover.exceptions.MapNotFoundException;
 import roman.dominic.Rover.exceptions.ObstacleConflictException;
-import roman.dominic.Rover.models.Map;
 import roman.dominic.Rover.models.Obstacle;
-import roman.dominic.Rover.models.Rover;
-import roman.dominic.Rover.services.ObstacleServiceImpl;
+import roman.dominic.Rover.services.IObstacleService;
 
 @RestController
 @RequestMapping("/obstacle")
 public class ObstacleController {
 
-    ObstacleServiceImpl obstacleService;
+    IObstacleService obstacleService;
 
     @Autowired
-    public ObstacleController(ObstacleServiceImpl obstacleService) {
+    public ObstacleController(IObstacleService obstacleService) {
         this.obstacleService = obstacleService;
     }
 

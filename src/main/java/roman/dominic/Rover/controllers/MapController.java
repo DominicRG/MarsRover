@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import roman.dominic.Rover.models.Map;
-import roman.dominic.Rover.services.MapServiceImpl;
+import roman.dominic.Rover.services.IMapService;
 
 @RestController
 @RequestMapping("/map")
 public class MapController {
 
-    MapServiceImpl mapService;
+    IMapService mapService;
     @Autowired
-    public MapController(MapServiceImpl mapService) {
+    public MapController(IMapService mapService) {
         this.mapService = mapService;
     }
 

@@ -4,7 +4,7 @@ import roman.dominic.Rover.models.Map;
 
 import java.util.Optional;
 
-public interface MapServiceImpl {
+public interface IMapService {
     Map createDefaultMap();
     Optional<Map> getMap();
 }

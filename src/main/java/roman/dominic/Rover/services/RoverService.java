@@ -11,7 +11,7 @@ import roman.dominic.Rover.util.MapValidationUtil;
 import java.util.Optional;
 
 @Service
-public class RoverService implements RoverServiceImpl{
+public class RoverService implements IRoverService {
     @Override
     public Rover createRover(Integer x, Integer y, Direction direction) throws MapNotFoundException, ObstacleConflictException {
         Map map = MapValidationUtil.ensureMapExists();

@@ -6,7 +6,7 @@ import roman.dominic.Rover.models.Map;
 import java.util.Optional;
 
 @Service
-public class MapService implements MapServiceImpl{
+public class MapService implements IMapService {
     @Override
     public Map createDefaultMap() {
         return Map.getInstance(10,10);

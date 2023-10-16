@@ -7,7 +7,7 @@ import roman.dominic.Rover.models.Rover;
 
 import java.util.Optional;
 
-public interface RoverServiceImpl {
+public interface IRoverService {
     Rover createRover(Integer x, Integer y, Direction direction) throws MapNotFoundException, ObstacleConflictException;
     Optional<Rover> getRover() throws MapNotFoundException;
     String commands(String input) throws MapNotFoundException;

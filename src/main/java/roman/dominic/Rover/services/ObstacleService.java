@@ -9,7 +9,7 @@ import roman.dominic.Rover.models.Rover;
 import roman.dominic.Rover.util.MapValidationUtil;
 
 @Service
-public class ObstacleService implements ObstacleServiceImpl{
+public class ObstacleService implements IObstacleService {
 
     @Override
     public Obstacle createObstacle(Integer x, Integer y) throws MapNotFoundException, ObstacleConflictException {
